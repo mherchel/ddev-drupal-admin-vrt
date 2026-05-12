@@ -43,7 +43,7 @@ if [ "$MODE" = "normal" ]; then
 elif [ "$MODE" = "full" ]; then
   :
 fi
-CMD+=("${PASSTHROUGH_ARGS[@]}" --update-snapshots)
+CMD+=("${PASSTHROUGH_ARGS[@]}" --update-snapshots=all)
 
 "${CMD[@]}"
 EXIT_CODE=$?
